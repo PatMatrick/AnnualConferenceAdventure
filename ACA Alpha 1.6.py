@@ -929,6 +929,13 @@ def cast_benediction():
         PlayerIG.health -= EAttack
         print "The enemy deals damage!"
         option = raw_input('-> ')
+
+
+
+
+
+
+
         fight()
 
 
@@ -1385,7 +1392,7 @@ def attack():
             print "The enemy missed!"
     else:
         PlayerIG.health -= EAttack
-        print "The enemy deals damage!"
+        print ("The enemy deals ") + str(EAttack) +  (" damage!")
         option = raw_input('-> ')
     if PlayerIG.health <= 0:
         dead()
